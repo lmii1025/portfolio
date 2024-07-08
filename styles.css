@@ -1,0 +1,57 @@
+/* ベーススタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* モバイル用スタイル */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+/* デスクトップ用スタイル */
+@media (min-width: 769px) {
+    nav ul li {
+        display: inline;
+        margin-right: 1rem;
+    }
+}
+
+/* グリッドレイアウトの基本スタイル */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
