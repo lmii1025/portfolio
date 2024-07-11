@@ -7,6 +7,7 @@
   *::after {
     box-sizing: inherit;
   }
+  html, body {
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
     color: rgba(23, 23, 23, 0.95);
