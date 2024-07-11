@@ -1,57 +1,68 @@
-/* ベーススタイル */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-}
-
-header, footer {
+    box-sizing: border-box;
+  }
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    color: rgba(23, 23, 23, 0.95);
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* align-itemsをbaselineからcenterに変更 */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .menu {
+    text-align: right;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer; /* カーソルをポインターに変更 */
+    display: none; /* デフォルトでは非表示 */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-main {
-    padding: 1rem;
-}
-
-/* モバイル用スタイル */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-}
-
-/* デスクトップ用スタイル */
-@media (min-width: 769px) {
-    nav ul li {
-        display: inline;
-        margin-right: 1rem;
-    }
-}
-
-/* グリッドレイアウトの基本スタイル */
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.item {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border: 1px solid #ddd;
-}
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
