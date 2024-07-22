@@ -182,6 +182,24 @@ ul li img {
   height: auto;
 }
 
+.tutorial {
+  text-align: center; 
+  margin-bottom: 1em; 
+}
+
+.tutorial img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.tutorial video {
+  width: 80%; /* コンテナの幅に合わせて動画のサイズを調整 */
+  height: auto; /* 高さは自動調整 */
+  border-radius: 8px; /* 角を丸くする */
+}
+
+
 .school-image {
   width: 250px; 
   height: auto;
@@ -191,6 +209,26 @@ ul li img {
   width: 250px; 
   height: auto;
 }
+
+/* 共通スタイルの設定 */
+.original img,
+.katei img {
+  max-width: 100%; /* コンテナの幅に合わせてサイズを調整 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 8px; /* 角を丸くする */
+}
+
+/* 特定のサイズに設定したい場合 */
+.original img {
+  width: 300px; /* 例: 幅300px */
+  height: auto; /* 高さを自動調整 */
+}
+
+.katei img {
+  width: 200px; /* 例: 幅200px */
+  height: auto; /* 高さを自動調整 */
+}
+
 
 
 
