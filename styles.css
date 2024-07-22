@@ -1,69 +1,134 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  background-color: #AEE2FF;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #B9F3FC;
+  color: #000000;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+h1, h2 {
+  color: #000000;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #FEDEFF;
+  display: inline-block;
+}
+
+section {
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile_image img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 1em auto;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #FEDEFF;
+  margin: 1em 0;
+  padding: 1.5em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+}
+
+ul li div {
+  margin: 0.5em 1em;
+  flex: 1;
+}
+
+ul li img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.list-link, .list-link1, .list-link2, .list-link3 {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.list-link:hover, .list-link1:hover, .list-link2:hover, .list-link3:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.5em;
   }
-  *::before,
-  *::after {
-    box-sizing: inherit;
+  h2 {
+      font-size: 2em;
   }
-  html, body {
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
-    color: rgba(23, 23, 23, 0.95);
-    background-color: #f8f8f8;
+  section {
+      padding: 1em;
+      margin: 1em;
   }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* align-itemsをbaselineからcenterに変更 */
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  ul li {
+      padding: 1em;
+      flex-direction: column;
   }
-  
-  .logo {
-    font-size: 1.5rem;
+  ul li img {
+      max-width: 100px;
   }
-  
-  .menu {
-    text-align: right;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 2em;
   }
-  
-  .menu-icon {
-    font-size: 24px;
-    cursor: pointer; /* カーソルをポインターに変更 */
-    display: none; /* デフォルトでは非表示 */
+  h2 {
+      font-size: 1.5em;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  ul li {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
-  nav ul li {
-    margin-left: 20px;
+  ul li img {
+      max-width: 80px;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+}
