@@ -11,7 +11,7 @@ header {
   background-color: #ffffff;
   color: #000000;
   font-size: 50px;
-  height: 600px;
+  height: 629px;
   text-align: center;
   padding: 1.5em 0;
   overflow: hidden; /* 内容がはみ出さないようにする */
@@ -19,7 +19,11 @@ header {
 
 .header-content {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2; /* コンテンツが背景画像や動画の上に表示されるようにする */
+
 }
 
 .header-overlay {
@@ -30,6 +34,26 @@ header {
   height: 100%;
   z-index: 1;
   overflow: hidden;
+}
+
+.header-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+
+.shadow {
+  color: #6e6e6e; /* 背面テキストの色 */
+  z-index: 1;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* テキストに影を付けて視認性を向上 */
+  
+}
+
+.foreground {
+  color: #a9f6f6; /* 前面テキストの色 */
+  z-index: 2;
 }
 
 .background-image {
@@ -116,7 +140,7 @@ header {
 
 
 h1, h2 {
-  color: #000000;
+  color: #6e6e6e;
 }
 
 header h1 {
@@ -134,10 +158,17 @@ h2 {
 section {
   padding: 2em;
   margin: 2em auto;
-  max-width: 1200px;
-  background-color: #3e1f1f;
-  border-radius: 10px;
+  width: 80%; /* 横幅を親要素の90%に設定 */
+  max-width: 1200px; /* 最大幅は1200pxに設定 */
+  background-color: #fef7ff;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%; /* スクリーン幅が768px以下の場合、横幅を100%に設定 */
+  }
 }
 
 .profile_image img {
