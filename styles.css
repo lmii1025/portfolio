@@ -1,11 +1,12 @@
-/* General styles */
+
 body {
   font-family: 'Arial', sans-serif;
-  color: #000000;
-  background-color: #AEE2FF;
+  color: #6e6e6e;
+  background-color: #aeffff;
   margin: 0;
   padding: 0;
 }
+
 
 header, footer {
   background-color: #B9F3FC;
@@ -13,6 +14,67 @@ header, footer {
   text-align: center;
   padding: 1.5em 0;
 }
+
+.like-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+  gap: 20px; /* アイテム間の間隔 */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.like-list li {
+  background-color: #FEDEFF;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.like-list .like-img {
+  width: 100px; /* 画像の幅 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+}
+
+.like-list h2 {
+  margin: 0.5em 0;
+}
+
+.like-list p {
+  margin: 0;
+}
+
+.skill-list {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 中央揃え */
+  gap: 20px; /* アイテム間の間隔 */
+  list-style-type: none; /* リストマーカーを削除 */
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* センター揃え */
+  text-align: center;
+}
+
+.skill-list .skill-thing {
+  margin-bottom: 0.5em;
+}
+
+.skill-list img {
+  width: 100px; /* 画像の幅 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 10px; /* 角を丸くする */
+}
+
 
 h1, h2 {
   color: #000000;
@@ -26,7 +88,6 @@ header h1 {
 h2 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  border-bottom: 2px solid #FEDEFF;
   display: inline-block;
 }
 
@@ -47,6 +108,7 @@ section {
   margin: 1em auto;
 }
 
+
 p {
   line-height: 1.6;
   margin: 1em 0;
@@ -58,17 +120,11 @@ ul {
 }
 
 ul li {
-  background-color: #FEDEFF;
   margin: 1em 0;
   padding: 1.5em;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  transition: transform 0.3s;
-}
-
-ul li:hover {
-  transform: translateY(-5px);
 }
 
 ul li div {
@@ -91,6 +147,52 @@ ul li img {
 .list-link:hover, .list-link1:hover, .list-link2:hover, .list-link3:hover {
   text-decoration: underline;
 }
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.illustration img[src="fama.png"],
+.illustration img[src="fama2.png"] {
+  width: 300px;
+  height: auto;
+}
+
+.illustration img[src="fama.png"] {
+  width: 300px; 
+  height: auto;
+}
+
+.illustration img[src="fama2.png"] {
+  width: 300px;
+  height: auto;
+}
+
+.illustration img[src="coffee.png"] {
+  width: 300px;
+  height: auto;
+}
+
+.school-image {
+  width: 250px; 
+  height: auto;
+}
+
+.mint-image {
+  width: 250px; 
+  height: auto;
+}
+
+
 
 footer p {
   margin: 0;
