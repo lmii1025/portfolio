@@ -8,10 +8,10 @@ body {
 
 header {
   position: relative;
-  background-color: #45c1d4;
+  background-color: #ffffff;
   color: #000000;
-  font-size: 60px;
-  height: 1000px;
+  font-size: 50px;
+  height: 600px;
   text-align: center;
   padding: 1.5em 0;
   overflow: hidden; /* 内容がはみ出さないようにする */
@@ -120,6 +120,7 @@ h1, h2 {
 header h1 {
   font-size: 3em;
   font-weight: bold;
+  margin-top: 200px;
 }
 
 h2 {
@@ -265,6 +266,22 @@ ul li img {
   width: 200px; /* 例: 幅200px */
   height: auto; /* 高さを自動調整 */
 }
+
+/* グリッドレイアウトの設定 */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+  gap: 10px; /* アイテム間の間隔 */
+}
+
+.image-grid .original:nth-child(-n+3) {
+  grid-row: 1; /* 最初の3枚を1行目に配置 */
+}
+
+.image-grid .original:nth-child(n+4) {
+  grid-row: 2; /* 残りの4枚を2行目に配置 */
+}
+
 
 
 
