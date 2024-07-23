@@ -211,17 +211,26 @@ ul li img {
 #like {
   padding: 0.2em;
   margin: 2em auto;
-  max-width: 1000px;
+  max-width: 1200px; 
   max-height: 700px;
   background-color: #fef7ff;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#like h2 {
 
+#like h2 {
   margin-top: 30px;
   margin-left: 30px;
+  font-size: 40px; /* タイトルのフォントサイズ */
+  font-weight: bold; /* 太字 */
+  color: #6e6e6e; /* テキストの色 */
+}
+
+.like-list .small-text {
+  font-size: 28px; 
+  color: #6e6e6e; 
+  margin-top: 0;
 }
 
 #like p{
@@ -243,7 +252,7 @@ ul li img {
 
 .like-list li {
   border-radius: 10px;
-  padding: 0.5em; /* 内側のパディングを調整して、画像の周りの余白を狭める */
+  padding: 0.5em; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,19 +260,13 @@ ul li img {
 }
 
 .like-list .like-img {
-  width: 1000px;
+  width: 100%;
   height: auto; 
-  border-radius: 10px;
-  margin-bottom: 5px; /* 画像下部のマージンを狭める */
+  border-radius: 20px;
+  margin-bottom: 0; 
 }
 
 
-.like-list h2 {
-  margin-top: 20px;
-  margin-left: 50px;
-  font-size: 28px;
-  font-weight: normal;
-}
 
 .like-list p {
   margin: 0;
