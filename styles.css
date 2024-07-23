@@ -44,14 +44,14 @@ header {
 
 
 .shadow {
-  color: #6e6e6e; /* 背面テキストの色 */
+  color: #6e6e6e; 
   z-index: 1;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* テキストに影を付けて視認性を向上 */
   
 }
 
 .foreground {
-  color: #a9f6f6; /* 前面テキストの色 */
+  color: #a9f6f6; 
   z-index: 2;
 }
 
@@ -80,7 +80,7 @@ header {
   padding: 0.2em;
   margin: 2em auto;
   max-width: 800px;
-  background-color: #fef7ff;
+  background-color: #fcf0fe;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -148,7 +148,7 @@ section {
   margin: 2em auto;
   width: 100%;
   max-width: 1200px;
-  background-color: #fef7ff;
+  background-color: #fcf0fe;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -159,7 +159,7 @@ section {
   padding: 0.2em;
   margin: 2em auto;
   max-width: 800px;
-  background-color: #fef7ff;
+  background-color: #fcf0fe;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -178,11 +178,10 @@ section {
 }
 
 #like {
-  padding: 0.2em;
+  padding: 1em;
   margin: 2em auto;
-  max-width: 1200px; 
-  max-height: 1000px;
-  background-color: #fef7ff;
+  max-width: 1200px;
+  background-color: #fcf0fe;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -190,27 +189,26 @@ section {
 #like h2 {
   margin-top: 30px;
   margin-left: 30px;
-  font-size: 40px; 
+  font-size: 40px;
   font-weight: bold;
   color: #6e6e6e;
 }
 
 .like-list .small-text {
-  font-size: 28px; 
-  color: #6e6e6e; 
-  margin-left: -20px;
+  font-size: 28px;
+  color: #6e6e6e;
 }
 
 #like p {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 10px;
 }
 
 .like-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 0; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* 画像間のスペース */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -218,47 +216,75 @@ section {
 
 .like-list li {
   border-radius: 10px;
-  padding: 0.2em; 
+  padding: 1em; /* 画像とテキストの間のスペース */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #fffbff; /* 背景色を追加 */
 }
 
 .like-list .like-img {
-  width: 200px;
-  height: auto; 
-  border-radius: 30px;
-  margin-bottom: 0; 
-  
+  width: 200px; /* 画像の幅を設定 */
+  height: auto;
+  border-radius: 10px; /* 画像の角を丸く */
+  margin-bottom: 10px; /* 画像とテキストの間のスペース */
+}
+
+.like-list h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6e6e6e;
 }
 
 .like-list p {
   margin: 0;
+  font-size: 16px;
+  color: #6e6e6e;
 }
+
+#works {
+
+  padding: 1em;
+  margin: 2em auto;
+  max-width: 1200px;
+  background-color: #fcf0fe;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 
 .list-link:hover, .list-link1:hover, .list-link2:hover, .list-link3:hover {
   text-decoration: underline;
 }
 
+.list-link {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #6e6e6e; 
+  margin-top: 20px;
+  margin-bottom: 10px; 
+}
+
+.list-link h2 {
+
+  color: #6e6e6e;
+}
+
 .illustration {
-  display: flex;
+  display: flex; 
+  gap: 20px; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
   justify-content: center;
-  gap: 10px; 
-  margin-bottom: 20px;
 }
 
 .illustration img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; 
-}
-
-.illustration img[src="fama.png"],
-.illustration img[src="fama2.png"] {
-  width: 300px;
-  height: auto;
+  width: 200px; 
+  height: auto; 
+  border-radius: 10px;
 }
 
 .illustration img[src="fama.png"] {
@@ -288,9 +314,9 @@ section {
 }
 
 .tutorial video {
-  width: 80%; /* コンテナの幅に合わせて動画のサイズを調整 */
-  height: auto; /* 高さは自動調整 */
-  border-radius: 8px; /* 角を丸くする */
+  width: 80%; 
+  height: auto;
+  border-radius: 8px; 
 }
 
 
@@ -307,35 +333,33 @@ section {
 /* 共通スタイルの設定 */
 .original img,
 .katei img {
-  max-width: 100%; /* コンテナの幅に合わせてサイズを調整 */
-  height: auto; /* 高さを自動調整 */
-  border-radius: 8px; /* 角を丸くする */
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px; 
 }
 
-/* 特定のサイズに設定したい場合 */
 .original img {
-  width: 300px; /* 例: 幅300px */
-  height: auto; /* 高さを自動調整 */
+  width: 300px; 
+  height: auto; 
 }
 
 .katei img {
-  width: 200px; /* 例: 幅200px */
-  height: auto; /* 高さを自動調整 */
+  width: 200px; 
+  height: auto; 
 }
 
-/* グリッドレイアウトの設定 */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
-  gap: 10px; /* アイテム間の間隔 */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
 }
 
 .image-grid .original:nth-child(-n+3) {
-  grid-row: 1; /* 最初の3枚を1行目に配置 */
+  grid-row: 1; 
 }
 
 .image-grid .original:nth-child(n+4) {
-  grid-row: 2; /* 残りの4枚を2行目に配置 */
+  grid-row: 2; 
 }
 
 
@@ -385,8 +409,8 @@ ul li img {
 
 .list-link, .list-link1, .list-link2, .list-link3 {
   font-weight: bold;
-  color: #000000;
-  text-decoration: none;
+  color: #6e6e6e;
+  
 }
 
 .small-text {
@@ -572,4 +596,83 @@ footer {
   footer {
     font-size: 0.8em;
   }
+}
+
+/* ヘッダーのスタイル */
+header {
+    position: relative;
+    background: #f0f0f0;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        width: 200px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
 }
