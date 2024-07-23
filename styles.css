@@ -76,42 +76,6 @@ header {
   opacity: 0.5; /* 不透明度を調整 */
 }
 
-
-.like-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
-  gap: 20px; /* アイテム間の間隔 */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.like-list li {
-  border-radius: 10px;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.like-list .like-img {
-  width: 100px; /* 画像の幅 */
-  height: auto; /* 高さを自動調整 */
-  border-radius: 10px;
-  margin-bottom: 0.5em;
-}
-
-.like-list h2 {
-  margin: 0.5em 0;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.like-list p {
-  margin: 0;
-}
-
 .skill-list {
   display: flex; /* フレックスボックスを使用 */
   justify-content: center; /* 中央揃え */
@@ -133,9 +97,9 @@ header {
 }
 
 .skill-list img {
-  width: 100px; /* 画像の幅 */
-  height: auto; /* 高さを自動調整 */
-  border-radius: 10px; /* 角を丸くする */
+  width: 100px;
+  height: auto; 
+  border-radius: 10px; 
 }
 
 
@@ -215,17 +179,17 @@ ul li img {
   text-decoration: none;
 }
 
-/* 小テキスト*/
 .small-text {
-  font-size: 20px; /* 小さくするためのフォントサイズ */
-  color: #6e6e6e; /* 必要に応じて色を調整 */
+  font-size: 20px;
+  color: #6e6e6e; 
   font-weight: normal;
 }
 
 #about {
+
   padding: 0.2em;
   margin: 2em auto;
-  max-width: 1200px;
+  max-width: 800px;
   background-color: #fef7ff;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -240,6 +204,69 @@ ul li img {
 #about p{
 
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#like {
+  padding: 0.2em;
+  margin: 2em auto;
+  max-width: 1000px;
+  max-height: 700px;
+  background-color: #fef7ff;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#like h2 {
+
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#like p{
+
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+
+.like-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1px; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.like-list li {
+  border-radius: 10px;
+  padding: 0.5em; /* 内側のパディングを調整して、画像の周りの余白を狭める */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.like-list .like-img {
+  width: 1000px;
+  height: auto; 
+  border-radius: 10px;
+  margin-bottom: 5px; /* 画像下部のマージンを狭める */
+}
+
+
+.like-list h2 {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.like-list p {
+  margin: 0;
 }
 
 .list-link:hover, .list-link1:hover, .list-link2:hover, .list-link3:hover {
