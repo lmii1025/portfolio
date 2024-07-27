@@ -288,34 +288,55 @@ section {
 }
 
 .illustration img {
-  width: 200px; 
+  width: 300px; 
   height: auto; 
   border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.illustration img[src="fama.png"] {
-  width: 300px; 
-  height: auto;
-}
-
-.illustration img[src="fama2.png"] {
-  width: 300px;
-  height: auto;
-}
-
-.illustration img[src="coffee.png"] {
-  width: 300px;
-  height: auto;
+.illust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .school-image {
-  width: 500px; 
+  width: 700px; 
   height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.angel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.angel-image {
+  width: 400px; 
+  height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  text-align: center;
 }
 
 .mint-image {
-  width: 250px; 
+  width: 400px; 
   height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .tutorial {
