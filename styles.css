@@ -142,11 +142,6 @@ section {
   color: #6e6e6e;
 }
 
-.like-list .small-text {
-  font-size: 28px;
-  color: #6e6e6e;
-}
-
 #like p {
   text-align: center;
   margin-bottom: 20px;
@@ -164,26 +159,26 @@ section {
 
 .like-list li {
   border-radius: 10px;
-  padding: 1em; /* 画像とテキストの間のスペース */
+  padding: 1em; 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #fffbff; /* 背景色を追加 */
+  background-color: #fffbff; 
+}
+
+.like-list .small-text {
+  font-size: 28px;
+  color: #6e6e6e;
+  margin-left: -30px;
 }
 
 .like-list .like-img {
-  width: 200px; /* 画像の幅を設定 */
+  width: 200px; 
   height: auto;
-  border-radius: 10px; /* 画像の角を丸く */
-  margin-bottom: 10px; /* 画像とテキストの間のスペース */
-}
-
-.like-list h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #6e6e6e;
+  border-radius: 10px; 
+  margin-bottom: 10px; 
+  margin-top: 20px;
 }
 
 .like-list p {
@@ -339,24 +334,39 @@ section {
   margin-bottom: 30px;
 }
 
-.tutorial {
-  text-align: center; 
-  margin-bottom: 1em; 
+.tutorial-container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1em;
 }
 
-.tutorial img {
-  width: 300px; 
-  height: auto; 
-  border-radius: 8px; 
+.tutorial-item {
+  text-align: center;
 }
 
-.tutorial video {
-  width: 80%; 
+.tutorial-item img {
+  width: 350px;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 
-/* 共通スタイルの設定 */
+.tutoriamovie {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.tutoriamovie video {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 70px;
+}
+
+
 .original img,
 .katei img {
   max-width: 100%; 
