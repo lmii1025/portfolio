@@ -238,7 +238,7 @@ section {
 }
 
 .skill-list img {
-  width: 100px;
+  width: 120px;
   height: auto; 
   border-radius: 10px; 
 }
@@ -308,6 +308,16 @@ section {
   height: auto;
 }
 
+.school-image {
+  width: 500px; 
+  height: auto;
+}
+
+.mint-image {
+  width: 250px; 
+  height: auto;
+}
+
 .tutorial {
   text-align: center; 
   margin-bottom: 1em; 
@@ -323,17 +333,6 @@ section {
   width: 80%; 
   height: auto;
   border-radius: 8px; 
-}
-
-
-.school-image {
-  width: 250px; 
-  height: auto;
-}
-
-.mint-image {
-  width: 250px; 
-  height: auto;
 }
 
 /* 共通スタイルの設定 */
