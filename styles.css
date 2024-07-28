@@ -517,5 +517,49 @@ h4 {
   text-align: center;
 }
 
+/* メディアクエリ */
+@media (max-width: 768px) {
+
+  .like-list li, .skill-list li, .illustration, .illust, .angel, .mint, .tutorial-item {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.like-img, .skill-thing img, .Illustrator img, .ibis img, .blend img, .illustration img, .illust img, .angel img, .mint img, .tutorial-item img {
+    width: 100%;
+    height: auto;
+}
+
+.tutorial-container {
+    flex-direction: column;
+}
+
+.tutoriamovie video {
+    width: 100%;
+}
+}
+
+  .header-text {
+      font-size: 2rem;
+  }
+  
+  .profile_image img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .like-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .tutorial-container {
+      flex-direction: column;
+  }
 
 
