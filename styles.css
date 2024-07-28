@@ -141,17 +141,29 @@ section {
 }
 
 #like h2 {
-  margin-top: 30px;
-  margin-left: 30px;
-  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-size: 30px;
   font-weight: bold;
   color: #6e6e6e;
 }
 
 #like p {
   text-align: center;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#like .small-text {
+
+  font-size: 20px;
+}
+
+#like .small-text2 {
+
+  font-size: 30px;
+  margin-left: -60px;
 }
 
 .like-list {
@@ -205,17 +217,23 @@ section {
 }
 
 #skill h2 {
-
-  font-size: 40px;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #6e6e6e;
 }
 
-#skill p{
-
-  font-size: 15px;
+#skill p {
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+#skill .small-text {
+
+  font-size: 20px;
 }
 
 .skill-list {
@@ -239,9 +257,10 @@ section {
 }
 
 .skill-list img {
-  width: 120px;
+  width: 100px;
   height: auto; 
   border-radius: 10px; 
+  margin-bottom: 50px;
 }
 
 #works {
@@ -255,10 +274,23 @@ section {
 }
 
 #works h2 {
-
-  font-size: 28px;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #6e6e6e;
+}
+
+#works p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#works .small-text {
+
+  font-size: 20px;
 }
 
 .list-link:hover, .list-link1:hover, .list-link2:hover, .list-link3:hover {
@@ -278,6 +310,8 @@ section {
 .list-link h2 {
 
   color: #6e6e6e;
+  font-size: 20px;
+  
 }
 
 .illustration {
@@ -292,7 +326,7 @@ section {
   width: 300px; 
   height: auto; 
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -379,6 +413,12 @@ h3 {
   margin-top: 70px;
 }
 
+.original {
+
+  text-align: center;
+
+}
+
 .original-container {
   display: flex;
   gap: 60px;
@@ -407,8 +447,19 @@ h3 {
 }
 
 .original img {
-  width: 300px; 
+  width: 600px; 
   height: auto; 
+  display: inline-block;
+  margin-top: 100px;
+  
+}
+
+h4 {
+
+  font-size: 30px;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 40px;
 }
 
 .katei img {
