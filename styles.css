@@ -4,7 +4,10 @@ body {
   background-color: #aeffff;
   margin: 0;
   padding: 0;
+  background-image: radial-gradient(circle, #85e4e4 15%, transparent 16%);
+  background-size: 20px 20px;
 }
+
 
 header {
   position: relative;
@@ -14,7 +17,7 @@ header {
   height: 629px;
   text-align: center;
   padding: 1.5em 0;
-  overflow: hidden; /* 内容がはみ出さないようにする */
+  overflow: hidden; 
 }
 
 .header-content {
