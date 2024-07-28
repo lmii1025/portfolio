@@ -517,4 +517,71 @@ h4 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1em 0;
+  }
 
+  .header-content {
+    transform: translate(-50%, -10%);
+  }
+
+  header h1 {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+
+  .header-text {
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+  #about h2, #like h2, #skill h2, #works h2 {
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+
+  .like-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .skill-list {
+    flex-direction: column;
+  }
+
+  .illustration img {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    transform: translate(-50%, -30%);
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
+  .header-text {
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+
+  #about h2, #like h2, #skill h2, #works h2 {
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+
+  .like-list .small-text {
+    font-size: 16px;
+  }
+
+  .skill-list img {
+    width: 80px;
+  }
+}
