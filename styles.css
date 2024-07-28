@@ -92,12 +92,11 @@ h2 {
 }
 
 section {
-  padding: 2em;
+  padding: 0.2em;
   margin: 2em auto;
-  width: 100%;
-  max-width: 1200px;
-  background-color: #fcf0fe;
-  border-radius: 20px;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -432,7 +431,7 @@ h3 {
 }
 
 .original-item img {
-  width: 300px; 
+  width: 350px; 
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px; 
@@ -455,22 +454,37 @@ h3 {
 }
 
 h4 {
-
   font-size: 30px;
   text-align: left;
   margin-top: 100px;
   margin-left: 40px;
 }
 
+.katei-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  gap: 20px;
+}
+
+.katei-item {
+  text-align: center;
+}
+
 .katei img {
   width: 200px; 
   height: auto; 
+  margin-top: -100px;
 }
+
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 10px;
+  gap: 40px;
+  width: 1000px;
+  height: auto;
+  margin-left: 100px;
 }
 
 .image-grid .original:nth-child(-n+3) {
@@ -481,9 +495,6 @@ h4 {
   grid-row: 2; 
 }
 
-
-
-
 .profile_image img {
   max-width: 200px;
   height: auto;
@@ -492,7 +503,16 @@ h4 {
   margin: 1em auto;
 }
 
+#sns {
 
+  text-align: center;
+}
+
+#sns h2,
+#sns p {
+
+  text-align: center;
+}
 
 
 
